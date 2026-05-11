@@ -4,7 +4,7 @@ trigger:
       - main
       - feature/*
 pool:
-  name: Default
+  name: MyPool
 jobs:
   - job: deploy_martini_packages
     displayName: Deploy Martini Packages
