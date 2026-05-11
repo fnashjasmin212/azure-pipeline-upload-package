@@ -19,6 +19,7 @@ jobs:
         displayName: Build docker image
         inputs:
           command: build
+          buildContext: $(Build.SourcesDirectory)
           Dockerfile: '**/Dockerfile'
           tags: latest
           buildArguments: '--build-arg MARTINI_VERSION=latest'
